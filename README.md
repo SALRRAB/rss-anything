@@ -10,8 +10,8 @@ Uses [Diffbot's Extract API](https://www.diffbot.com/products/extract/) to trans
  * npm
 
 ```sh
-pip install requirements.txt
-npm install tailwindcss
+pip install -r requirements.txt
+npm install -D tailwindcss@3
 npx tailwindcss -i ./static/custom.css -o ./static/main.css
 flask run
 ```

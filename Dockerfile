@@ -6,6 +6,8 @@ COPY ./ /app
 
 # install requirements
 RUN pip install -r requirements.txt
+RUN npm install -D tailwindcss@3
+RUN npx tailwindcss -i ./static/custom.css -o ./static/main.css
 
 # start app
 EXPOSE 8000
